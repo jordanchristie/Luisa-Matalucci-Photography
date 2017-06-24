@@ -1,60 +1,86 @@
-<!DOCTYPE html>
-<html >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>LMP Unsolicited Redesign</title>
-  
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
-
-  
-</head>
-
-<body>
-  <html>
-<head>
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="scss/style.min.css">
 </head>
 <body>
   <nav>
     <h3 class="title">Luisa Matalucci Photography</h3>
-    <ul class="menu">
+    <ul class="main-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <ul class="slide-nav menu">
       <i class="fa fa-window-close close"></i>
-      <li><a href="">Home</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Gallery</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li class="social-media">
-        <a href="" class="fa fa-instagram"></a>
+        <a href="https://www.instagram.com/luisamatalucciphotography/" target="_blank" class="fa fa-instagram"></a>
         <a href="" class="fa fa-linkedin"></a>
-        <a href="" class="fa fa-facebook"></a>
-        <a href="" class="fa fa-google-plus"></a>
+        <a href="https://www.facebook.com/luisamatalucciphotography" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://plus.google.com/+Luisamatalucciphotography10924" target="_blank" class="fa fa-google-plus"></a>
       </li>
     </ul>
     <i class="fa fa-bars burger"></i>
   </nav>
-  
+
   <header id="home">
      <img src="http://luisamatalucciphotography.com/images/luisa-logo-test-1-crop-u416.png" alt="Luisa Matalucci Photography"  class="logo"/>
   </header>
-  
+
   <section id="about">
-    <img src="http://luisamatalucciphotography.com/images/about_resize.jpg" alt="Luisa Matalucci" class="profile"/>
-    <p>Luisa Matalucci Photography, LLC is an up-and-coming business based in Goshen, New York, that provides photographic services throughout the Hudson Valley. Luisa Matalucci is a young photographer who recently graduated from Marymount Manhattan College with a degree in Dance and Media. After living in Manhattan for four years, she moved back to her hometown of Goshen. Here, she decided to start a photography business, since it has been a passion of hers for many years.</p>
-    <p>Luisa focuses mainly on portrait photography, specializing in weddings, events, headshots, family, and dance photos. She offers a variety of options to her clients and personalizes her photoshoots to fit each client's needs.</p>
+    <div class="profile-side">
+      <img src="http://luisamatalucciphotography.com/images/about_resize.jpg" alt="Luisa Matalucci" class="profile"/>
+    </div>
+    <div class="about-text">
+      <p>Luisa Matalucci Photography, LLC is an up-and-coming business based in Goshen, New York, that provides photographic services throughout the Hudson Valley. Luisa Matalucci is a young photographer who recently graduated from Marymount Manhattan College with a degree in Dance and Media. After living in Manhattan for four years, she moved back to her hometown of Goshen. Here, she decided to start a photography business, since it has been a passion of hers for many years.</p>
+      <p>Luisa focuses mainly on portrait photography, specializing in weddings, events, headshots, family, and dance photos. She offers a variety of options to her clients and personalizes her photoshoots to fit each client's needs.</p>
+    </div>
   </section>
   <section id="gallery">
     <h1>Gallery</h1>
-    <ul>
-      <li><a href="">Weddings</a></li>
-      <li><a href="">Dance</a></li>
-      <li><a href="">Events</a></li>
-      <li><a href="">Family</a></li>
-      <li><a href="">Portraits</a></li>
-      <li><a href="">Photobooth</a></li>
-    </ul>
+    <div class="gallery-wrap">
+      <div class="gallery-img">
+        <img src="http://luisamatalucciphotography.com/images/08.jpg" alt="Weddings" data-lightbox="Wedding" />
+        <div class="img-overlay">
+          <p>Weddings</p>
+        </div>
+      </div>
+      <div class="gallery-img">
+        <img src="http://luisamatalucciphotography.com/images/014.jpg" alt="Dance" data-lightbox="Dance"/>
+        <div class="img-overlay">
+          <p>Dance</p>
+        </div>
+      </div>
+      <div class="gallery-img">
+        <img src="http://luisamatalucciphotography.com/images/152.jpg" alt="Events" data-lightbox="Events"/>
+        <div class="img-overlay">
+          <p>Events</p>
+        </div>
+      </div>
+      <div class="gallery-img">
+        <img src="http://luisamatalucciphotography.com/images/025.jpg" alt="Family" data-lightbox="Family"/>
+        <div class="img-overlay">
+          <p>Family</p>
+        </div>
+      </div>
+      <div class="gallery-img">
+        <img src="http://luisamatalucciphotography.com/images/153.jpg" alt="Portraits" data-lightbox="Portraits"/>
+        <div class="img-overlay">
+          <p>Portraits</p>
+        </div>
+      </div>
+      <div class="gallery-img">
+        <img src="http://luisamatalucciphotography.com/images/086.jpg" alt="Photobooth" data-lightbox="Photobooth"/>
+        <div class="img-overlay">
+          <p>Photobooth</p>
+        </div>
+      </div>
+    </div>
   </section>
   <section id="contact">
     <form action="contact-form">
@@ -69,18 +95,15 @@
   </section>
   <footer>
     <ul class="social-media-footer">
-      <li class="fa fa-instagram"><a href=""></a></li>
+      <li class="fa fa-instagram"><a href="https://www.instagram.com/luisamatalucciphotography/" target="_blank"></a></li>
       <li class="fa fa-linkedin"><a href=""></a></li>
-      <li class="fa fa-facebook"><a href=""></a></li>
-      <li class="fa fa-google-plus"><a href=""></a></li>    
+      <li class="fa fa-facebook"><a href="https://www.facebook.com/luisamatalucciphotography" target="_blank"></a></li>
+      <li class="fa fa-google-plus"><a href="https://plus.google.com/+Luisamatalucciphotography10924" target="_blank"></a></li>
     </ul>
-    <small>&copy; 2015 Luisa Matalucci Photography, LLC</small>
+    <p><small>&copy; 2015 Luisa Matalucci Photography, LLC</small></p>
   </footer>
-</body>
-</html>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
-    <script src="js/index.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
