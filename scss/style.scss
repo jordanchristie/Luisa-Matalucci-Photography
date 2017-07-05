@@ -12,6 +12,9 @@ body {
 ul {
   list-style-type: none;
 }
+h1 {
+  font-size: 2.5em;
+}
 nav {
   z-index: 1000;
   display: flex;
@@ -173,24 +176,25 @@ form {
   color: white;
 }
 form input {
-  height: 2em;
   width: 60%;
   margin: 20px auto;
+  font-size: 1em;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   border-bottom: 1px solid black;
 }
 form textarea {
   width: 60%;
   margin: 20px auto;
+  font-size: 1em;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   border-bottom: 1px solid black;
 }
 .submit {
-  height: 2.5em;
-  width: 5em;
   border-radius: 10px;
+  font-size: 1.753em;
+  font-weight: bolder;
   background: white;
   margin: 20px auto;
 }
@@ -210,12 +214,12 @@ footer p {
 
 
 @media (min-width: 31em) {
+  nav {
+    height: 55px;
+  }
   form {
     width: 75%;
     margin: 0 auto;
-  }
-  nav {
-    height: 55px;
   }
 }
 
@@ -253,6 +257,12 @@ footer p {
   .about-text {
     width: 40%;
     margin: 1em;
+  }
+  form input {
+    font-size: 1.75em;
+  }
+  form textarea {
+    font-size: 1.75em;
   }
 }
 @media (min-width: 50em) {
