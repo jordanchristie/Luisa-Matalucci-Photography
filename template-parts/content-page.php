@@ -9,14 +9,13 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
-	<?php luisamatalucciphotography_post_thumbnail(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
 
 	<div class="entry-content">
+		<div id="hero-wrapper">
+			<h1><?php the_field('hero_company_name') ?></h1>
+			<img src="<?php the_field('hero_background_image') ?>" alt="Background Image" />
+		</div>
 		<?php
 		the_content();
 

@@ -15,7 +15,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/css/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
 	<?php wp_head(); ?>
@@ -46,8 +45,6 @@
 				<?php endif; ?>
 			</div><!-- .site-branding -->
 
-		
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'luisamatalucciphotography' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
@@ -56,7 +53,9 @@
 			?>
 		</nav><!-- #site-navigation -->
 		<!-- hero section -->
-		<img src="<?php the_field('hero_background_image'); ?>" alt="Luisa Matalucci Photography"  class="logo"/>
+		<?php if(has_post_thumbnail() ) : the_post_thumbnail(); endif;?>
+		
+		
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<!-- <div id="content" class="site-content"> -->

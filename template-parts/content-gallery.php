@@ -12,16 +12,16 @@
     ?>
 
     <?php if ($loop->have_posts() ) : while($loop->have_posts() ): $loop->the_post(); ?>
-    
-      <div class="gallery-img">
-        <?php if( has_post_thumbnail() ) : the_post_thumbnail('medium'); endif; ?>
-        <?php the_content(); ?>
-          <div class="img-overlay">
-            <h3><?php the_title(); ?></h3>
-          </div>
-        </a>
-      </div>
-              
+
+        <div class="gallery-img">
+          <?php if( has_post_thumbnail() ) : the_post_thumbnail('medium'); endif; ?>
+          <?php the_content(); ?>
+          <a href="<?php  ?>">  
+            <div class="img-overlay">
+              <h3><?php the_title(); ?></h3>
+            </div>
+          </a>  
+        </div>      
       <?php endwhile; endif; wp_reset_postdata(); ?>
     </div>
     

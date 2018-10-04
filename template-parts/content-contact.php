@@ -1,5 +1,5 @@
 <section id="contact">
-    <form action="contact-form">
+    <form action="contact-form" class="contact-form">
       <h1>Contact</h1>
       <input type="text" placeholder="Name"/>
       <input type="text" placeholder="Email address"/>

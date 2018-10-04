@@ -11,7 +11,6 @@
 
 ?>
 
-	</div><!-- #content -->
 
 <footer>
     <ul class="social-media-footer">

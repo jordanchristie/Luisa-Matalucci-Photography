@@ -1,0 +1,28 @@
+{
+  "name": "luisamatalucciphotography",
+  "version": "1.0.0",
+  "description": "Wordpress theme for Luisa Matalucci",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanchristie/Luisa-Matalucci-Photography.git"
+  },
+  "keywords": [
+    "photography",
+    "wordpress",
+    "portfolio",
+    "blog"
+  ],
+  "author": "Jordan Christie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordanchristie/Luisa-Matalucci-Photography/issues"
+  },
+  "homepage": "https://github.com/jordanchristie/Luisa-Matalucci-Photography#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}
