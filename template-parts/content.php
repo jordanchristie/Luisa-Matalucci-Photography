@@ -9,8 +9,9 @@
 
 ?>
 
-<?php if (!is_front_page()): ?>
-<div class="blog-layout">
+<!-- BLOG INDEX PAGE -->
+
+
 	<article class="blog-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 		<header class="entry-header">
 			<?php
@@ -41,7 +42,7 @@
 			
 		</footer><!-- .entry-footer -->
 	</article><!-- #post-<?php the_ID(); ?> -->
-<?php get_sidebar(); endif;?>
-</div>
+
+
 
 

@@ -47,6 +47,7 @@ html {
 
 body {
 	margin: 0;
+	padding: 0;
 }
 
 /**
@@ -757,10 +758,14 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
-.blog-layout {
+.content-area {
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr 2fr;
+	grid-template-columns: auto 4fr auto 2fr;
 	grid-template-areas: ". blog . sidebar"
+}
+
+.site-main {
+	grid-area: blog;
 }
 
 .widget-area {
@@ -777,10 +782,11 @@ a:hover, a:active {
 }
 
 .blog-card {
-	grid-area: blog;
 	padding: 1em 2em;
+	margin: 1em;
 	background: #fff;
-	height: auto;
+	-webkit-box-shadow: 0px 10px 40px 8px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0px 10px 40px 8px rgba(0, 0, 0, 0.5);
 }
 
 .entry-footer a {
@@ -946,6 +952,7 @@ object {
 body {
 	overflow-x: hidden;
 	background: #f3fbf7;
+	box-sizing: border-box;
   }
   
   ul {
@@ -1055,28 +1062,37 @@ body {
   }
 
   .gallery-img {
-	  position: relative;
+	position: relative;
+	margin: 1em;
   }
-  
+
   .gallery-img img {
-	margin: 0 1em;
 	height: 200px;
+	width: 100%;
   }
 
   .img-overlay {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #fff;
-	border: 1px solid #fff;
-	padding: 0 2em;
-	transition: all 0.3s ease-in-out;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0; 
+	color: #fff;	
   }
 
-  .gallery_img:hover {
-	filter: opacity(0.5);
-	transition: all 0.3s ease-in-out;
+  .img-overlay h3 {
+	position: relative;
+	top: 15%;
+	left: 13%;
+	background: rgba(0, 0, 0, 0.6);
+	font-size: 2.5em;
+	width: 75%;
+	color: #fff;
+	border: 1px solid #fff;
+  }
+
+  .img-overlay h3:hover {
+	  background: white;
   }
   
   #contact {
