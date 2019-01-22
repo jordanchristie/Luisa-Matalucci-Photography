@@ -10,8 +10,6 @@
 ?>
 
 <!-- BLOG INDEX PAGE -->
-
-
 	<article class="blog-card" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 		<header class="entry-header">
 			<?php
@@ -32,7 +30,7 @@
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
-		<?php luisamatalucciphotography_post_thumbnail(); ?>
+		<?php if (! is_single()) luisamatalucciphotography_post_thumbnail('full'); ?>
 
 		<div class="blog-content">
 			<?php the_content(); ?>

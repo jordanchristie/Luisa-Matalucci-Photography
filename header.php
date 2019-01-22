@@ -53,9 +53,8 @@
 			?>
 		</nav><!-- #site-navigation -->
 		<!-- hero section -->
-		<?php if(has_post_thumbnail() ) : the_post_thumbnail(); endif;?>
-		
-		
+		<?php if (is_single() && has_post_thumbnail()) the_post_thumbnail(); ?>
+		<?php if (is_home()) the_post_thumbnail(get_the_post_thumbnail(get_option('page_for_posts')) );  ?>
 	</header><!-- #masthead -->
 
 	<!-- <div id="content" class="site-content"> -->
