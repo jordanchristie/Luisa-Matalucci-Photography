@@ -30,7 +30,7 @@
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
-		<?php if (! is_single()) luisamatalucciphotography_post_thumbnail('full'); ?>
+		<?php if (!is_single()) luisamatalucciphotography_post_thumbnail('full'); ?>
 
 		<div class="blog-content">
 			<?php the_content(); ?>

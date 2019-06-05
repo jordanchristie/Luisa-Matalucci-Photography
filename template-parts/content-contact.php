@@ -7,5 +7,5 @@
       <button class="submit">Submit</button>
     </form>
     <p><i class="fa fa-phone"> (845)294-8884</i></p>
-    <p><i class="fa fa-envelope">luisamatalucciphotography@gmail.com</i></p>
+    <a href="mailto:luisamatalucciphotography@gmail.com"><i class="fa fa-envelope"> luisamatalucciphotography@gmail.com</i></a>
 </section>

@@ -13,8 +13,8 @@
 
 	<div class="entry-content">
 		<div id="hero-wrapper">
-			<h1><?php the_field('hero_company_name') ?></h1>
 			<img src="<?php the_field('hero_background_image') ?>" alt="Background Image" />
+			<h1><?php the_field('hero_company_name') ?></h1>
 		</div>
 		<?php
 		the_content();
