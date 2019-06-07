@@ -29,15 +29,7 @@
 			<div class="site-branding">
 				<?php
 				the_custom_logo();
-				if ( is_front_page() && is_home() ) :
-					?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php
-				else :
-					?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-					<?php
-				endif;
+			
 				$luisamatalucciphotography_description = get_bloginfo( 'description', 'display' );
 				if ( $luisamatalucciphotography_description || is_customize_preview() ) :
 					?>
@@ -53,8 +45,15 @@
 			?>
 		</nav><!-- #site-navigation -->
 		<!-- hero section -->
-		<?php if (is_single() && has_post_thumbnail()) the_post_thumbnail(); ?>
-		<?php if (is_home()) the_post_thumbnail(get_the_post_thumbnail(get_option('page_for_posts')) );  ?>
+		<div class="hero-wrapper">
+		<?php if (is_single() && has_post_thumbnail()) the_post_thumbnail('full'); ?>
+		<?php if (is_home()) :?>
+		<div id="hero-wrapper">
+			<h1><?php the_field('hero_company_name') ?></h1>
+		</div>
+			<?php endif; ?>	
+		</div>
+		
 	</header><!-- #masthead -->
 
 	<!-- <div id="content" class="site-content"> -->

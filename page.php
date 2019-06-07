@@ -17,7 +17,7 @@ get_header();
 
 		<?php the_title(); ?>
 
-		<div class="blog-layout">
+		<main class="blog-layout">
 			<?php
 			while ( have_posts() ) :
 				the_post();
@@ -31,7 +31,7 @@ get_header();
 
 			endwhile; // End of the loop.
 			?>
-		</div>
+		</main>
 
 <?php
 get_sidebar();

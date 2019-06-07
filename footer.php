@@ -19,7 +19,7 @@
       <li class="fa fa-facebook"><a href="https://www.facebook.com/luisamatalucciphotography" target="_blank"></a></li>
       <li class="fa fa-google-plus"><a href="https://plus.google.com/+Luisamatalucciphotography10924" target="_blank"></a></li>
     </ul>
-    <p><small>&copy; 2015 Luisa Matalucci Photography, LLC</small></p>
+    <p><small>&copy; <?php echo date('Y')?> Luisa Matalucci Photography, LLC</small></p>
 </footer>
 
 <script src="<?php bloginfo( 'template_directory' ) ?>/js/jquery-2.1.1.min.js"></script>

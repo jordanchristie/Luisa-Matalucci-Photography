@@ -12,15 +12,15 @@
     ?>
 
     <?php if ($loop->have_posts() ) : while($loop->have_posts() ): $loop->the_post(); ?>
-
+       
         <div class="gallery-img">
           <?php if( has_post_thumbnail() ) : the_post_thumbnail('medium'); endif; ?>
           <?php the_content(); ?>
-          <a href="<?php the_permalink(); ?>">
+          
             <div class="img-overlay">
-              <h3><?php the_title(); ?></h3>
+              <?php echo(get_the_category_list('', 'multiple')); ?>
             </div>
-          </a>  
+
         </div>      
       <?php endwhile; endif; wp_reset_postdata(); ?>
     </article>
