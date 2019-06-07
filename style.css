@@ -385,7 +385,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -601,7 +601,7 @@ textarea {
 --------------------------------------------------------------*/
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #333333;
 }
 
 a:focus {
@@ -993,7 +993,6 @@ body {
   }
 
   #primary-menu {
-		margin: -1.5em 0;
 	  display: -webkit-box;
 	  display: -ms-flexbox;
 	  display: flex;
@@ -1122,6 +1121,7 @@ body {
 	font-size: 2.5em;
 	color: #fff;
 	transition: all .3s ease;
+	text-decoration: none;
   }
   
   #contact {
@@ -1221,8 +1221,6 @@ body {
 		text-align: center;
 	}
  }
-
- .not-found
 
  @media screen and (min-width: 640px) {
 	.blog-card {
