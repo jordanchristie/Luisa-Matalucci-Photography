@@ -18,7 +18,7 @@
           <?php the_content(); ?>
           
             <div class="img-overlay">
-              <?php echo(get_the_category_list('', 'multiple')); ?>
+              <?php echo(get_the_category_list()); ?>
             </div>
 
         </div>      
